@@ -3,7 +3,7 @@ from . import views as view
 
 urlpatterns=[
     path("",view.index,name="todo-index"),
-    path('update/<int:pk>/',view.update,name="todo-update"),
-    path('delete/<int:pk>/',view.deleteTodo,name='todo-delete')
+    path('<int:pk>/',view.update,name="todo-update"),
+    path('<int:pk>/',view.deleteTodo,name='todo-delete')
    
 ]

@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse,HttpResponseBadRequest
 from .models import Task
 from django.template import context
 
